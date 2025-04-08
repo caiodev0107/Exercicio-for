@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int linhas, colunas;
+    cout <<"entre com o tamanho de linhas desenho: ";
+    cin >> linhas;
+    cout <<"entre com o tamanho do desenho: ";
+    cin >> colunas;
+    for (int i=0; i<linhas ; i++) {
+       cout<< " | ";
+       for(int j=0 ; j<colunas ; j++){
+        cout<< "( "<< i << ","<< j << " ) "<< "  ";
+       }
+        cout<< "|" << endl;
+
+    }
+
+
+
+
+}
