@@ -1,0 +1,35 @@
+    #include <iostream>
+    using namespace std;
+
+    int main (){
+    int x;
+    int y = 60;
+    int z = 3600;
+    int w = 86400;
+
+    cout << "entre com o valor em segundos :";
+    cin >> x;
+    int opcao;
+    cout << "entre com uma das opcao" << endl;
+    cout << "1: transforma o valor em minutos." << endl;
+    cout << "2: transforma o valor em horas." << endl;
+    cout << "3: tansforma o valor em dias." <<endl;
+    cout << endl;
+    cout << "opcao :";
+    cin >>opcao;
+
+    switch (opcao){
+     case 1 :
+      cout << x << " segundos sao :"<< x/y <<" minutos e " << x%y << " segundos";
+       break;
+
+   case 2 :
+    cout << x << "segundos sao: " << x/z << "horas :" << (x%z)/y << "minutos";
+    break;
+
+     case 3 :
+             cout << x << " segundos sao : "<< x/w << " dias e " << (x%w) / z << " horas.";
+
+    }
+
+    }
